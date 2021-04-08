@@ -17,7 +17,7 @@ public class MathBook {
             this.language = _language;
         }
 
-    public MathBook() {
+    public MathBook(){
     }
 
     //Khoi tao phương thuc thuoc tinh
@@ -39,7 +39,7 @@ public class MathBook {
         this.price= _price;
     }
     public int getPrice(){
-        return this.number;
+        return this.price;
     }
     public void setNumber(int _number){
         this.number = _number;
@@ -72,5 +72,6 @@ public class MathBook {
     public int getAmount(){
         return this.price*this.number;
     }
+
 
 }

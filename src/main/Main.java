@@ -49,20 +49,7 @@ public class Main {
         }
 
         public static void main(String[] args) {
-//        MathBook mathBooks[] = new MathBook[10];
-//        for (int i = 0; i <mathBooks.length ; i++) {
-//            String _name = "Toán"+i;
-//            mathBooks[i] = new MathBook();
 //
-//            mathBooks[i].setName(_name);
-//            mathBooks[i].setPrice(i*1000);
-//            mathBooks[i].setNumber(i*10);
-//
-//        }
-//        for (int i = 0; i < mathBooks.length ; i++) {
-//            System.out.println(mathBooks[i].getName());
-//            System.out.println(mathBooks[i].getAmount());
-//        }
          MathBook[] mathbooks =new MathBook[10];
          mathbooks[0]= new MathBook("mathbook1", 10, 10000, "Java")  ;
          mathbooks[1]= new MathBook("mathbook2", 5, 12000, "Java")  ;
@@ -75,15 +62,20 @@ public class Main {
          mathbooks[8]= new MathBook("mathbook9", 7, 15000, "English")  ;
          mathbooks[9]= new MathBook("mathbook10", 2, 15000, "Java")  ;
 
-//            sumPrice(mathbooks);
-            countBook(mathbooks);
-            findbook(mathbooks);
-
-            Main main1= new Main();
-            int sum = main1.sumPrice(mathbooks);
-            System.out.println(sum);
+//             Phương an ko su dung them 1 lop
+//            Main main1= new Main();
+//            int sum = main1.sumPrice(mathbooks);
+//            System.out.println(sum);
+//             findbook(mathbooks);
 
 
+//       Phương an sủ dung khác
+            ManagerBook hoang=new ManagerBook();
+            hoang.setArrBooks(mathbooks);
+
+
+            String[] k= hoang.findbook2(14000);
+            System.out.println(k[0]);
 
     }
 }
