@@ -10,12 +10,16 @@ public class ManagerBook {
     public static MathBook[] getArrBooks() {
         return arrBooks;
     }
-    public static void setArrBooks(MathBook[] arrBooks) {
-        ManagerBook.arrBooks = arrBooks;
+    public static void setArrBooks(MathBook[] arr) {
+        ManagerBook.arrBooks = arr;
+//        this.arrBooks=arr; // tai sao ko dc;
     }
 
     //khoi tao
     public ManagerBook(){};
+    public ManagerBook(MathBook[] arr){
+        this.arrBooks= arr;
+    }
 
     public int sumPrice(){
         int sum =0;

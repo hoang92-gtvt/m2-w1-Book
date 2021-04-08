@@ -70,12 +70,15 @@ public class Main {
 
 
 //       Phương an sủ dung khác
-            ManagerBook hoang=new ManagerBook();
-            hoang.setArrBooks(mathbooks);
+            ManagerBook hoang=new ManagerBook();// khơi tạo không tham số, dữ liệu chưa đc truyền vào
+            hoang.setArrBooks(mathbooks); // khởi tạo mảng thông qua setter, dữ liệu đc truyền;
 
 
             String[] k= hoang.findbook2(14000);
-            System.out.println(k[0]);
+            System.out.println(k[2]);
 
+            ManagerBook yen=new ManagerBook(mathbooks); // dùng phương thức khởi tạo có tham số,
+            String[] l= hoang.findbook2(14000);
+            System.out.println(l[2]);
     }
 }
