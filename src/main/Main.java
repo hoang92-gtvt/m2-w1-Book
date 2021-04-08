@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class Main {
 
 //    private countBook(){
-        private int sumPrice(MathBook[] arr){
+        private static int sumPrice(MathBook[] arr){
             int sum =0;
             for (int i = 0; i <arr.length ; i++) {
                 sum +=arr[i].getPrice();
             }
             return sum;
         }
-        private int countBook( MathBook[] arr){
+        private static int countBook(MathBook[] arr){
             int count=0;
             for (int i = 0; i < arr.length ; i++) {
                 if(arr[i].getLang()=="Java"){
@@ -23,7 +23,7 @@ public class Main {
             }
             return count;
         }
-        private void findbook(MathBook[] arr){
+        private static void findbook(MathBook[] arr){
             Scanner input=new Scanner(System.in);
             System.out.println("Nhập giá tiền ");
             int coat=input.nextInt();
@@ -34,7 +34,7 @@ public class Main {
                 }
             }
         }
-        private String[] findbook2(MathBook[] arr){
+        private static String[] findbook2(MathBook[] arr){
             Scanner input=new Scanner(System.in);
             System.out.println("Nhập giá tiền ");
             int coat=input.nextInt();
