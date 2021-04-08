@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 
 public class Main {
+        public Main(){};
 
 //    private countBook(){
-        private static int sumPrice(MathBook[] arr){
+        private int sumPrice(MathBook[] arr){
             int sum =0;
             for (int i = 0; i <arr.length ; i++) {
                 sum +=arr[i].getPrice();
@@ -74,9 +75,15 @@ public class Main {
          mathbooks[8]= new MathBook("mathbook9", 7, 15000, "English")  ;
          mathbooks[9]= new MathBook("mathbook10", 2, 15000, "Java")  ;
 
-            sumPrice(mathbooks);
+//            sumPrice(mathbooks);
             countBook(mathbooks);
             findbook(mathbooks);
+
+            Main main1= new Main();
+            int sum = main1.sumPrice(mathbooks);
+            System.out.println(sum);
+
+
 
     }
 }
