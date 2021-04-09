@@ -22,7 +22,8 @@ public class MathBook {
 
     //Khoi tao phương thuc thuoc tinh
     public void setBookCode(String _bookCode){
-        this.bookCode = _bookCode;
+
+
     }
     public String getBookCode(){
         return this.bookCode;

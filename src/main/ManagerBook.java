@@ -10,9 +10,9 @@ public class ManagerBook {
     public static MathBook[] getArrBooks() {
         return arrBooks;
     }
-    public static void setArrBooks(MathBook[] arr) {
+    public  static void setArrBooks(MathBook[] arr) {
         ManagerBook.arrBooks = arr;
-//        this.arrBooks=arr; // tai sao ko dc;
+//        this.arrBooks=arr; // tai sao ko dc; vì static trong
     }
 
     //khoi tao

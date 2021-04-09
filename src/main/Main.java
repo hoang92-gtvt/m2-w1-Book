@@ -7,14 +7,15 @@ import java.util.Scanner;
 public class Main {
         public Main(){};
 
-//    private countBook(){
+
         private int sumPrice(MathBook[] arr){
             int sum =0;
             for (int i = 0; i <arr.length ; i++) {
-                sum +=arr[i].getPrice();
+                sum += arr[i].getPrice();
             }
             return sum;
         }
+
         private static int countBook(MathBook[] arr){
             int count=0;
             for (int i = 0; i < arr.length ; i++) {
@@ -62,11 +63,11 @@ public class Main {
          mathbooks[8]= new MathBook("mathbook9", 7, 15000, "English")  ;
          mathbooks[9]= new MathBook("mathbook10", 2, 15000, "Java")  ;
 
-//             Phương an ko su dung them 1 lop
+////             Phương an ko su dung them 1 lop
 //            Main main1= new Main();
 //            int sum = main1.sumPrice(mathbooks);
 //            System.out.println(sum);
-//             findbook(mathbooks);
+////             findbook(mathbooks);
 
 
 //       Phương an sủ dung khác
@@ -80,5 +81,7 @@ public class Main {
             ManagerBook yen=new ManagerBook(mathbooks); // dùng phương thức khởi tạo có tham số,
             String[] l= hoang.findbook2(14000);
             System.out.println(l[2]);
+
+            //2 biến yen va hoang có cùng giá trị khi thay đổi 1 trong 2 vì là biến và static
     }
 }
