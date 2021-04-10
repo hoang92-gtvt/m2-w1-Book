@@ -1,5 +1,7 @@
 package book;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -28,8 +30,32 @@ public class Main {
 
         Book b11 =new FicBook("b6", "Van6", 16000, "yen2", "abc");
         MyArrBook yen = new MyArrBook(arr);
-        yen.addBook(b11, 5);
-        yen.printArr();
+
+        System.out.println("Nhập Lựa chọn cần thực hiện");
+        System.out.println("1: Thêm mới một book");
+        System.out.println("2: Xóa mới một book");
+        System.out.println("3: Sửa mới một book");
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Nhập giá trị ");
+        int a = input.nextInt();
+        switch(a){
+            case 1:
+                yen.addBook(b11, 5);
+                yen.printArr();
+                break;
+
+            case 2:
+                yen.deleteArr(5);
+                yen.printArr();
+                break;
+            case 3:
+                yen.editArr(5, 2, "van7");
+                yen.printArr();
+                break;
+        }
+
+
 
     }
 

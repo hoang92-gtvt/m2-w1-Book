@@ -37,5 +37,34 @@ public class MyArrBook extends Manager {
             super.setArrBooks(newArr);
         return newArr;
     }
+    public void editArr(int index, int thuoctinh, String value){
+        Book obj = getArrBooks()[index];
+        switch (thuoctinh){
+            case 1:
+                obj.setBookCode(value);
+                break;
+            case 2:
+                obj.setName(value);
+                break;
+            case 3:
+                obj.setOuthor(value);
+                break;
+            default:
+                System.out.println("giá trị nhập thuoc tinh phải từ 1 đến 3");
+                break;
+        }
+            //  ép kiểu string về value được ko?
+    }
+    public void editArr(int index, int thuoctinh, int value){
+        Book obj = getArrBooks()[index];
+        switch (thuoctinh){
+            case 1:
+                obj.setPrice(value);
+                break;
+            default:
+                System.out.println("Giá trị nhập thuoc tinh là 1");
+        }
+
+    }
 
 }
