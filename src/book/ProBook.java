@@ -26,4 +26,13 @@ public class ProBook extends Book {
         this.framwork = framwork;
     }
 
+    @Override
+    public String toString() {
+
+        return  super.toString()+
+                "ProBook{" +
+                "language='" + language + '\'' +
+                ", framwork='" + framwork + '\'' +
+                '}';
+    }
 }

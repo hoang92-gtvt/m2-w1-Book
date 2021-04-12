@@ -65,7 +65,7 @@ public class Manager {
 
     public static void printArr(){
         for (Book a: arrBooks ) {
-            System.out.println(a.name);
+            System.out.println(a);
         }
     }
 

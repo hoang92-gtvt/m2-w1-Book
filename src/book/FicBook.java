@@ -16,5 +16,11 @@ public class FicBook extends Book {
         this.category = category;
     }
 
-
+    @Override
+    public String toString() {
+        return  super.toString()+
+                "FicBook{" +
+                "category='" + category + '\'' +
+                '}';
+    }
 }

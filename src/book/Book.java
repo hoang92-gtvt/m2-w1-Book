@@ -1,10 +1,10 @@
 package book;
 
 public class Book {
-    String bookCode;
-    String name;
-    int price;
-    String outhor;
+    private String bookCode;
+    private String name;
+    private int price;
+    private String outhor;
 
     public Book(String bookCode, String name, int price, String outhor) {
         this.bookCode = bookCode;
@@ -43,5 +43,15 @@ public class Book {
 
     public void setOuthor(String outhor) {
         this.outhor = outhor;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookCode='" + bookCode + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", outhor='" + outhor + '\'' +
+                '}';
     }
 }
