@@ -3,6 +3,10 @@ package book;
 public class FicBook extends Book {
     String category;
 
+   public FicBook(){
+       super();
+   }
+
     public FicBook(String bookCode, String name, int price, String outhor, String category) {
         super(bookCode, name, price, outhor);
         this.category = category;

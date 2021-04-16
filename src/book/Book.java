@@ -13,6 +13,10 @@ public class Book {
         this.outhor = outhor;
     }
 
+    public Book() {
+    }
+
+
     public String getBookCode() {
         return bookCode;
     }

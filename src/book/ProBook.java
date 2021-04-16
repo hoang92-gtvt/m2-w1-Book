@@ -4,7 +4,10 @@ public class ProBook extends Book {
     String language;
     String framwork;
 
-    public ProBook(String bookCode, String name, int price, String outhor,String language, String framwork ) {
+    public ProBook() {
+    }
+
+    public ProBook(String bookCode, String name, int price, String outhor, String language, String framwork ) {
         super(bookCode, name, price, outhor);
         this.language = language;
         this.framwork = framwork;
